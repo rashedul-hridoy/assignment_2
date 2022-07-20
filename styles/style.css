@@ -1,0 +1,173 @@
+/* ------------------
+Common  Styles
+---------------------
+ */
+ body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+ }
+
+ /*-----------------
+  banner styles
+  ------------------
+   */
+   .container{
+    
+    width: 85%;
+    margin: auto;
+   }
+   .top-banner{
+    display: flex;
+    background-color: #161616;
+    align-items: flex-end;
+    border-radius: 30px;
+    margin-top: 50px;
+    
+    
+   }
+   .title-area-width{
+      width: 40%;
+      padding: 30px 0 120px 100px;
+   }
+   .half-width{
+    width: 50%;
+    margin-left: 20px;
+    
+    }
+   .half-width img{
+      width: 90%;
+      margin-bottom: -7px;
+    
+    }
+   .top-banner .title-area-width h1{
+    font-weight: 700;
+    font-size: 5vw;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    line-height: 1.1em;
+    
+   }
+   .top-banner .title-area-width p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+   }
+   .watch-live-btn{
+      text-decoration: none;
+      padding: 16px 25px;
+      background-color: #DD0000;
+      border-radius: 5px;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+
+      color: #FFFFFF;
+      
+   }
+   /* ---------------------
+      blog styles 
+      -------------------
+      */
+      .blog-container{
+         width: 85%;
+         margin: 100px auto;
+         display: flex;
+      }
+      
+      .nav-bar{
+         width: 25%;
+         background-color: #161616;
+         height: fit-content;
+         padding: 10px;
+         border-radius: 10px;
+         margin-right: 2%;
+         
+      }
+      
+      
+      .nav-button a{
+         text-decoration: none;
+         font-weight: 500;
+         font-size: 20px;
+         background-color: #FFFFFF;
+         border-radius: 10px;
+         text-align: center;
+         padding: 15px 15px;
+         display: block;
+         margin: 30px 30px;
+         color: #161616;
+         
+      }
+      .nav-button .active-button{
+         background-color: purple;
+         color: white;
+      }
+      .blogs{
+         width: 72%;
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         column-gap: 24px;
+         row-gap: 24px;
+      }
+      .blog{
+         border: 1px solid #ddd;
+         margin: 0px 10px 10px 10px;
+         border-radius: 10px;
+         padding-bottom: 20px;
+      }
+      .blog .blog-thumbnail img{
+         width: 100%;
+         margin-bottom: 20px;
+      }
+      .blog-info a{
+         text-decoration: none;
+         border: 1px solid #333;
+         border-radius: 5px;
+         padding: 2px 10px;
+         font-size: 16px;
+         font-weight: 500;
+         color: #161616;
+         margin-left: 15px;
+      }
+      .blog-info h3{
+         color: #161616;
+         font-size: 18px;
+         font-weight: 600;
+         padding-left: 15px;
+      }
+      .blog-info span {
+         margin-left: 15px;
+     
+     }
+
+     /*----------------------
+      footer styles
+      -----------------------
+       */
+       footer{
+         background-color: #161616;
+         padding: 100px 0;
+         margin-top: 100px;
+       }
+       footer h2{
+         color: #fff;
+         text-align: center;
+         font-size: 40px;
+         font-weight: 600;
+       }
+       hr{
+         border: 1px solid rgba(255, 255, 255, 0.1);
+       }
+       footer nav ul{
+         display: flex;
+         justify-content: space-evenly;
+         margin-top: 50px;
+       }
+       footer nav ul li a {
+         text-decoration: none;
+         color: #B9B9B9;
+         font-size: 16px;
+         font-weight: 500;
+     }
