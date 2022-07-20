@@ -272,7 +272,7 @@ Common  Styles
             
          }
          .title-area-width{
-            height: 300px;
+            height: 330px;
          }
          .top-banner .title-area-width h1{
             font-size: 22px;
@@ -285,7 +285,7 @@ Common  Styles
          }
          
          .half-width img{
-            width: 100%;
+            width: 80%;
 
          }
          .watch-live-btn{
