@@ -57,13 +57,18 @@ Common  Styles
    .watch-live-btn{
       text-decoration: none;
       padding: 16px 25px;
-      background-color: #DD0000;
+      background-color: purple;
       border-radius: 5px;
       font-weight: 400;
       font-size: 20px;
       text-align: center;
 
       color: #FFFFFF;
+      
+   }
+   .watch-live-btn:hover{
+      background-color: green;
+      cursor: grab;
       
    }
    /* ---------------------
@@ -142,6 +147,27 @@ Common  Styles
      
      }
 
+     /* ----------------
+     invisible button
+     -------------------
+      */
+      .tablet-view-button{
+         display: flex;
+         visibility: hidden;
+         justify-content: center;
+      }
+      .view-all a{
+         text-decoration: none;
+         padding: 16px 25px;
+         background-color: purple;
+         border-radius: 5px;
+         font-weight: 400;
+         font-size: 20px;
+         text-align: center;
+         color: #FFFFFF;
+
+      }
+
      /*----------------------
       footer styles
       -----------------------
@@ -149,7 +175,7 @@ Common  Styles
        footer{
          background-color: #161616;
          padding: 100px 0;
-         margin-top: 100px;
+         margin-top: 30px;
        }
        footer h2{
          color: #fff;
@@ -161,15 +187,24 @@ Common  Styles
          border: 1px solid rgba(255, 255, 255, 0.1);
        }
        footer nav ul{
-         display: flex;
-         justify-content: space-evenly;
+         
          margin-top: 50px;
+       }
+       footer nav ul li{
+         display: inline;
+         margin-right: 5%;
+         margin-left: 2%;
        }
        footer nav ul li a {
          text-decoration: none;
          color: #B9B9B9;
          font-size: 16px;
          font-weight: 500;
+     }
+     .social-icon {
+      display: flex;
+      
+      justify-content: center;
      }
 
      /*-----------------------
@@ -212,3 +247,142 @@ Common  Styles
          font-size: 16px;
          line-height: .5em;
       }
+   /*----------------------
+    Responsive Design
+    -------------------    
+    */
+
+    /*---------------
+     mobile view
+     ----------------
+      */
+      @media only screen and (max-width:600px) {
+
+         .top-banner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+         }
+         .title-area-width, .half-width{
+            width: 60%;
+            text-align: center;
+            margin: auto;
+            padding: 0;
+            
+         }
+         .title-area-width{
+            height: 300px;
+         }
+         .top-banner .title-area-width h1{
+            font-size: 22px;
+            
+         }
+         .top-banner .title-area-width p{
+            font-size: 14px;
+            margin-bottom: 26px;
+
+         }
+         
+         .half-width img{
+            width: 100%;
+
+         }
+         .watch-live-btn{
+            
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: 400;
+            font-size: 20px;
+         
+            
+         }
+         .blog-container{
+            flex-direction: column;
+            
+         }
+         .nav-bar{
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+         }
+         .nav-button a{
+            border: 1px solid rgba(128, 128, 128, 0.555);
+         }
+         .blogs, .matches{
+            grid-template-columns: repeat(1, 1fr);
+            width: 90%;
+            margin: 30px auto;
+         }
+         .blog, .match {
+            display: block;
+         }
+         .blog-thumbnail img{
+            width: 100%;
+
+         }
+        
+        footer nav ul li{
+          display: flex;
+          flex-direction: column;
+          margin-top: 5%;
+          justify-content: center;
+          align-items: center;
+        }
+       footer nav ul li a {
+         font-size: 20px;
+         text-decoration: none;
+         
+       }
+       nav .social-icon{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         width: 30%;
+         margin: auto;
+         justify-items: center;
+         margin-top: 50px;
+
+       }
+      }
+
+   /*-------------------
+    tablet view
+    --------------------
+     */
+     @media only screen and (min-width:601px) and (max-width:1024px) {
+      
+      .title-area-width{
+         width: 50%;
+      }
+      .half-width{
+         width: 50%;
+      }
+      .blog-container{
+         flex-direction: column;
+         
+      }
+      .nav-bar{
+         display: flex;
+         width: 100%;
+         justify-content: space-between;
+         background-color: white;
+      }
+      .nav-button a{
+         border: 1px solid grey;
+      }
+      .blogs, .matches{
+         grid-template-columns: repeat(2, 1fr);
+         width: 90%;
+         margin: 30px auto;
+      }
+      .tablet-view-button{
+         visibility: visible;
+
+      }
+      
+
+
+
+      
+     }
+
