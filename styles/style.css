@@ -171,3 +171,44 @@ Common  Styles
          font-size: 16px;
          font-weight: 500;
      }
+
+     /*-----------------------
+      upcoming matches styles 
+      ------------------------
+      */
+      .matches{
+         width: 72%;
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         column-gap: 24px;
+         row-gap: 24px;
+      }
+      .match{
+         border: 1px solid #ddd;
+         margin: 0px 10px 10px 10px;
+         border-radius: 10px;
+         padding-bottom: 20px;
+         padding-top: 20px;
+
+      }
+      .thumbnail-img{
+         display: flex;
+         align-items: center;
+         padding-top: 30px;
+         padding-left: 15px;
+         padding-right: 15px;
+         justify-content: space-evenly;
+      }
+      .thumbnail-img h2{
+         color: #161616;
+         font-size: 16px;
+         font-weight: 700;
+      }
+      .text-info{
+         text-align: center;
+      }
+      .text-info p{
+         color: #4D4D4D;
+         font-size: 16px;
+         line-height: .5em;
+      }
